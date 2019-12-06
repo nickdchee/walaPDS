@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'nickdchee'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.core/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.core.tests/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.cast.java/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.shrike/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.cast/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.util/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.cast.js/build/libs", include: '*.jar')
+    compile fileTree(dir: "C:/walaPDS/lib", include: '*.jar')
+    testCompile fileTree(dir: "C:/walaPDS/lib", include: '*.jar')
+    compile fileTree(dir: "C:/Dev/WALA/com.ibm.wala.dalvik/build/libs", include: '*.jar')
+    compile group: "org.slf4j", name: "slf4j-log4j12", version: "1.7.5"
+}
